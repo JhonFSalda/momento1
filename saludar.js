@@ -8,8 +8,8 @@ stdin.addListener("data", function(d) {
 
     var saludo1 = "Español: ¡Hola! " + dato + ".";
     var saludo2 = "English: ¡Hello! " + dato + ".";
-    //var saludo3 = "Deutsch: ¡Hallo! " + dato + ".";
-    //var saludo4 = "Español: ¡Hola! " + dato + ".";
+    var saludo3 = "Deutsch: ¡Hallo! " + dato + ".";
+    //var saludo4 = "Español: ¡ 안녕 ! " + dato + ".";
     //var saludo5 = "Español: ¡Hola! " + dato + ".";
 
     console.log("");
@@ -18,6 +18,7 @@ stdin.addListener("data", function(d) {
     console.log("");
     console.log(saludo1);
     console.log(saludo2);
+    console.log(saludo3);
     
 
     // if(dato == 'salir'){
@@ -28,7 +29,8 @@ stdin.addListener("data", function(d) {
         'Saludo' + dato + '.txt', 
         'Aquí estan tus saludos '+ dato +': \n \n' +
         saludo1 + "\n" + 
-        saludo2 + "\n" ,
+        saludo2 + "\n" +
+        saludo3 + "\n",
         (err) => {
             if (err) 
                 throw err;
